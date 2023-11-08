@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
-# Keyclaok base image version, override with --build-arg="KEYCLOAK_VERSION=..."
-ARG KEYCLOAK_VERSION=22.0.4
+# Keyclaok base image version, set with --build-arg="KEYCLOAK_VERSION=..."
+ARG KEYCLOAK_VERSION
 
 # See "Installing additional RPM packages" https://www.keycloak.org/server/containers
 FROM registry.access.redhat.com/ubi9 AS ubi-micro-build
