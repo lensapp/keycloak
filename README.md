@@ -18,7 +18,7 @@ deployments:
         repo: https://codecentric.github.io/helm-charts
       values:
         image:
-          repository: ghcr.io/chenhunghan/keycloak
+          repository: ghcr.io/lensapp/keycloak
           tag: 22.0.5
 # with tar and gzip, `devspace dev` works without issues
 dev:
