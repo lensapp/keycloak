@@ -16,6 +16,9 @@ jobs:
     strategy:
       matrix:
         keycloak_version:
+          - 23.0.7
+          - 23.0.6
+          - 23.0.5
           - 23.0.4
           - 23.0.3
           - 23.0.2
