@@ -17,6 +17,7 @@ jobs:
       matrix:
         keycloak_version:
           - 26.0.6
+          - 25.0.6
           - 25.0.0
           - 24.0.5
           - 23.0.7
