@@ -5,7 +5,7 @@ ARG KEYCLOAK_VERSION
 
 # See "Installing additional RPM packages" https://www.keycloak.org/server/containers
 FROM registry.access.redhat.com/ubi9 AS ubi-micro-build
-ARG DEV_DEPENDENCIES="tar gzip util-linux"
+ARG DEV_DEPENDENCIES="tar gzip util-linux curl"
 RUN mkdir -p /mnt/rootfs
 RUN dnf -y update
 RUN dnf install --installroot /mnt/rootfs ${DEV_DEPENDENCIES} --releasever 9 --setopt install_weak_deps=false --nodocs -y && \
